@@ -68,6 +68,10 @@ body {
 .card-title {
   font-weight: 800;
   font-size: 1.625rem;
+  cursor: pointer;
+}
+.card-title:hover {
+  color: var(--colorBackground);
 }
 
 .card-description {
