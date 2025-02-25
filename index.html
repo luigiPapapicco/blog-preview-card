@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
 
     <!-- Préchargement des polices -->
-    <link
+    <!-- <link
       rel="preload"
       href="/fonts/Figtree/woff2/Figtree-Medium.woff2"
       as="font"
@@ -19,22 +19,8 @@
       as="font"
       type="font/woff2"
       crossorigin="anonymous"
-    >
-    <link
-      rel="preload"
-      href="/fonts/Figtree/woff2/Figtree-MediumItalic.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    >
-    <link
-      rel="preload"
-      href="/fonts/Figtree/woff2/Figtree-ExtraBoldItalic.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    >
-
+    > -->
+ 
     <!-- Fichiers css -->
     <link rel="stylesheet" href="styles/reset.css" >
     <link rel="stylesheet" href="styles/style.css" >
@@ -82,6 +68,7 @@
     <main>
       <article class="card">
         <img
+          class="card-illustration"
           src="images/illustration-article.svg"
           alt="illustration graphique d'un languages à balises"
         />
@@ -98,8 +85,12 @@
         </p>
         <footer class="author">
           <div class="author-info">
-            <img src="" alt="" />
-            <span class="autor-name">Greg Hooper</span>
+            <img
+              class="author-avatar"
+              src="images/image-avatar.webp"
+              alt="photo de l'auteur de l'article"
+            />
+            <span class="author-name">Greg Hooper</span>
           </div>
         </footer>
       </article>

@@ -10,27 +10,10 @@
 
 @font-face {
   font-family: 'Figtree';
-  src: url(/fonts/Figtree/woff2/Figtree-MediumItalic.woff2) format(woff2),
-    url(/fonts/Figtree/woff/Figtree-MediumItalic.woff) format(woff);
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Figtree';
   src: url(/fonts/Figtree/woff2/Figtree-ExtraBold.woff2) format(woff2),
     url(/fonts/Figtree/woff/Figtree-ExtraBold.woff) format(woff);
   font-weight: 800;
   font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Figtree';
-  src: url(/fonts/Figtree/woff2/Figtree-ExtraBoldItalic.woff2) format(woff2),
-    url(/fonts/Figtree/woff/Figtree-ExtraBoldItalic.woff) format(woff);
-  font-weight: 800;
-  font-style: italic;
   font-display: swap;
 }
 
@@ -66,11 +49,15 @@ body {
   gap: 20px;
 }
 
+.card-illustration {
+  border-radius: 10px;
+}
+
 .card-category {
   background-color: var(--colorBackground);
   font-weight: 800;
   display: inline-block;
-  padding: 5px;
+  padding: 5px 10px;
   border-radius: 5px;
 }
 
@@ -84,4 +71,41 @@ body {
 }
 
 .card-description {
+  color: var(--colorThird);
+}
+
+.author-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.author-avatar {
+  width: 30px;
+  height: auto;
+}
+
+.author-name {
+  font-weight: 800;
+  font-size: 14px;
+}
+
+/* Media queries */
+
+@media (max-width: 440px) {
+  .card-category,
+  .card-date,
+  .card-description {
+    font-size: 13px;
+  }
+  .card-title {
+    font-size: 20px;
+  }
+  .author-avatar {
+    width: 24px;
+  }
+  .author-name {
+    font-size: 12px;
+  }
 }
