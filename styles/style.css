@@ -1,8 +1,8 @@
 /* déclaration de la police perso */
 @font-face {
   font-family: 'Figtree';
-  src: url(/fonts/Figtree/woff2/Figtree-Medium.woff2) format(woff2),
-    url(/fonts/Figtree/woff/Figtree-Medium.woff) format(woff);
+  src: url(../fonts/Figtree/woff2/Figtree-Medium.woff2) format(woff2),
+    url(../fonts/Figtree/woff/Figtree-Medium.woff) format(woff);
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -10,8 +10,8 @@
 
 @font-face {
   font-family: 'Figtree';
-  src: url(/fonts/Figtree/woff2/Figtree-ExtraBold.woff2) format(woff2),
-    url(/fonts/Figtree/woff/Figtree-ExtraBold.woff) format(woff);
+  src: url(../fonts/Figtree/woff2/Figtree-ExtraBold.woff2) format(woff2),
+    url(../fonts/Figtree/woff/Figtree-ExtraBold.woff) format(woff);
   font-weight: 800;
   font-style: normal;
   font-display: swap;
