@@ -38,36 +38,36 @@ body {
   background-color: var(--colorCard);
   font-family: var(--fontPrincipal);
   font-weight: 500;
-  max-width: 400px;
-  padding: 25px;
-  margin: 20px;
-  border-radius: 20px;
-  border: 2px solid var(--colorFourth);
-  box-shadow: 6px 6px 1px var(--colorFourth);
+  max-width: 25rem;
+  padding: 1.5625rem;
+  margin: 1.25rem;
+  border-radius: 1.25rem;
+  border: 0.125rem solid var(--colorFourth);
+  box-shadow: 0.375rem 0.375rem 0.0625rem var(--colorFourth);
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .card-illustration {
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 
 .card-category {
   background-color: var(--colorBackground);
   font-weight: 800;
   display: inline-block;
-  padding: 5px 10px;
-  border-radius: 5px;
+  padding: 0.3125rem 0.625rem;
+  border-radius: 0.3125rem;
 }
 
 .card-date {
-  margin: 10px 0px 0px 0px;
+  margin: 0.625rem 0rem 0rem 0rem;
 }
 
 .card-title {
   font-weight: 800;
-  font-size: 26px;
+  font-size: 1.625rem;
 }
 
 .card-description {
@@ -78,34 +78,34 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 10px;
+  gap: 0.625rem;
 }
 
 .author-avatar {
-  width: 30px;
+  width: 1.875rem;
   height: auto;
 }
 
 .author-name {
   font-weight: 800;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 /* Media queries */
 
-@media (max-width: 440px) {
+@media (max-width: 27.5rem) {
   .card-category,
   .card-date,
   .card-description {
-    font-size: 13px;
+    font-size: 0.8125rem;
   }
   .card-title {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   .author-avatar {
-    width: 24px;
+    width: 1.5rem;
   }
   .author-name {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 }
