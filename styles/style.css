@@ -1,8 +1,87 @@
-/* Reinitialisation de la page */
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* déclaration de la police perso */
+@font-face {
+  font-family: 'Figtree';
+  src: url(/fonts/Figtree/woff2/Figtree-Medium.woff2) format(woff2),
+    url(/fonts/Figtree/woff/Figtree-Medium.woff) format(woff);
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  src: url(/fonts/Figtree/woff2/Figtree-MediumItalic.woff2) format(woff2),
+    url(/fonts/Figtree/woff/Figtree-MediumItalic.woff) format(woff);
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Figtree';
+  src: url(/fonts/Figtree/woff2/Figtree-ExtraBold.woff2) format(woff2),
+    url(/fonts/Figtree/woff/Figtree-ExtraBold.woff) format(woff);
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  src: url(/fonts/Figtree/woff2/Figtree-ExtraBoldItalic.woff2) format(woff2),
+    url(/fonts/Figtree/woff/Figtree-ExtraBoldItalic.woff) format(woff);
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* variables  */
+:root {
+  --colorBackground: hsl(47, 88%, 63%);
+  --colorCard: hsl(0, 0%, 100%);
+  --colorThird: hsl(0, 0%, 42%);
+  --colorFourth: hsl(0, 0%, 7%);
+  --fontPrincipal: 'Figtree', sans-serif;
+}
+
+body {
+  background-color: var(--colorBackground);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: var(--colorCard);
+  font-family: var(--fontPrincipal);
+  font-weight: 500;
+  max-width: 400px;
+  padding: 25px;
+  margin: 20px;
+  border-radius: 20px;
+  border: 2px solid var(--colorFourth);
+  box-shadow: 6px 6px 1px var(--colorFourth);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-category {
+  background-color: var(--colorBackground);
+  font-weight: 800;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.card-date {
+  margin: 10px 0px 0px 0px;
+}
+
+.card-title {
+  font-weight: 800;
+  font-size: 26px;
+}
+
+.card-description {
 }

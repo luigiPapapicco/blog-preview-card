@@ -1,16 +1,108 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <!-- prettier-ignore -->
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/style.css" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+
+    <!-- Préchargement des polices -->
+    <link
+      rel="preload"
+      href="/fonts/Figtree/woff2/Figtree-Medium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    >
+    <link
+      rel="preload"
+      href="/fonts/Figtree/woff2/Figtree-ExtraBold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    >
+    <link
+      rel="preload"
+      href="/fonts/Figtree/woff2/Figtree-MediumItalic.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    >
+    <link
+      rel="preload"
+      href="/fonts/Figtree/woff2/Figtree-ExtraBoldItalic.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    >
+
+    <!-- Fichiers css -->
+    <link rel="stylesheet" href="styles/reset.css" >
+    <link rel="stylesheet" href="styles/style.css" >
+
+    <!-- Favicons -->
+    <link
+      rel="icon"
+      href="images/Favicon/favicon.ico"
+      sizes="any"
+      type="image/x-icon"
+    >
     <link
       rel="shortcut icon"
-      href="images/favicon-32x32.png"
+      href="images/Favicon/favicon-32x32.png"
+      sizes="32x32"
       type="image/x-icon"
-    />
+    >
+    <link
+      rel="shortcut icon"
+      href="images/Favicon/favicon-16x16.png"
+      sizes="16x16"
+       type="image/x-icon"
+    >
+    <link
+      rel="apple-touch-icon"
+      href="images/Favicon/apple-touch-icon.png"
+      sizes="180x180"
+    >
+    <link
+      rel="icon"
+      href="images/Favicon/android-chrome-192x192.png"
+      sizes="192x192"
+    >
+    <link
+      rel="icon"
+      href="images/Favicon/android-chrome-512x512.png"
+      sizes="512x512"
+    >
+
+    <meta name="description" content="html & css fondations" >
+    <meta name="keywords" content="blog, carte, aperçu, exemples" >
     <title>Blog preview card</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <article class="card">
+        <img
+          src="images/illustration-article.svg"
+          alt="illustration graphique d'un languages à balises"
+        />
+        <header>
+          <p class="card-category">Learning</p>
+          <p class="card-date">
+            Published <time datetime="2023-12-21">21 Dec 2023</time>
+          </p>
+        </header>
+        <h2 class="card-title">HTML & CSS foundations</h2>
+        <p class="card-description">
+          These languages are the backbone of every website, defining structure,
+          content, and presentation
+        </p>
+        <footer class="author">
+          <div class="author-info">
+            <img src="" alt="" />
+            <span class="autor-name">Greg Hooper</span>
+          </div>
+        </footer>
+      </article>
+    </main>
+  </body>
 </html>
